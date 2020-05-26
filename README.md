@@ -24,7 +24,7 @@ This module aims to simplify calling these data structures. All classes are pref
 
 For example, here is a data patch script to update the content of a CMS page with and without `SimpleData`:
 
-![With and Without SimpleData](https://raw.githubusercontent.com/markshust/magento2-module-simpledata/master/docs/without-with-simpledata.png)
+![Demo](https://raw.githubusercontent.com/markshust/magento2-module-simpledata/master/docs/demo.png)
 
 ## Installation
 
