@@ -97,7 +97,7 @@ class BlockFooBarCreate extends SimpleDataPatch
 <div class="foo-bar">
     Foo bar
 </div>
-CONTENT,
+CONTENT
         ]);
     }
 }
@@ -165,7 +165,7 @@ class PageFooBarCreate extends SimpleDataPatch
 <div class="foo-bar">
     Foo bar
 </div>
-CONTENT,
+CONTENT
         ]);
     }
 }
@@ -286,7 +286,7 @@ class MyClass
 <div class="foo-bar">
     Foo bar
 </div>
-CONTENT,
+CONTENT
         ]);
 
         // Carry out other actions...
