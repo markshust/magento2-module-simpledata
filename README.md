@@ -70,10 +70,6 @@ Here are the signatures of the simplified data structures classes:
      */
     public function save(array $data): void
 
-`MarkShust\SimpleData\Api\Data\Cms\SimpleConfig`
-
-    // An alias for WriterInterface that is easier to remember
-
 ### Examples using SimpleDataPatch
 
 #### Create block
