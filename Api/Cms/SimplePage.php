@@ -14,19 +14,23 @@ use Magento\Framework\Model\AbstractModel;
 use Magento\Store\Model\Store;
 use Psr\Log\LoggerInterface;
 
+/**
+ * Class SimplePage
+ * @package MarkShust\SimpleData\Api\Cms
+ */
 class SimplePage
 {
     /** @var GetPageByIdentifierInterface */
-    protected $getPageByIdentifier;
+    protected GetPageByIdentifierInterface $getPageByIdentifier;
 
     /** @var LoggerInterface */
-    protected $logger;
+    protected LoggerInterface $logger;
 
     /** @var PageInterfaceFactory */
-    protected $pageInterfaceFactory;
+    protected PageInterfaceFactory $pageInterfaceFactory;
 
     /** @var PageRepository */
-    protected $pageRepository;
+    protected PageRepository $pageRepository;
 
     /**
      * UpdateConfig constructor.

@@ -14,19 +14,23 @@ use Magento\Framework\Model\AbstractModel;
 use Magento\Store\Model\Store;
 use Psr\Log\LoggerInterface;
 
+/**
+ * Class SimpleBlock
+ * @package MarkShust\SimpleData\Api\Cms
+ */
 class SimpleBlock
 {
     /** @var BlockInterfaceFactory */
-    protected $blockInterfaceFactory;
+    protected BlockInterfaceFactory $blockInterfaceFactory;
 
     /** @var BlockRepository */
-    protected $blockRepository;
+    protected BlockRepository $blockRepository;
 
     /** @var GetBlockByIdentifierInterface */
-    protected $getBlockByIdentifier;
+    protected GetBlockByIdentifierInterface $getBlockByIdentifier;
 
     /** @var LoggerInterface */
-    protected $logger;
+    protected LoggerInterface $logger;
 
     /**
      * UpdateConfig constructor.

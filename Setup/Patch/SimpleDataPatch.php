@@ -8,16 +8,20 @@ use MarkShust\SimpleData\Api\Cms\SimpleBlock;
 use MarkShust\SimpleData\Api\Cms\SimplePage;
 use Magento\Framework\App\Config\Storage\WriterInterface as SimpleConfig;
 
+/**
+ * Class SimpleDataPatch
+ * @package MarkShust\SimpleData\Setup\Patch
+ */
 abstract class SimpleDataPatch implements DataPatchInterface
 {
     /** @var SimpleBlock */
-    protected $block;
+    protected SimpleBlock $block;
 
     /** @var SimpleConfig */
-    protected $config;
+    protected SimpleConfig $config;
 
     /** @var SimplePage */
-    protected $page;
+    protected SimplePage $page;
 
     /**
      * SimpleDataPatch constructor.
@@ -54,5 +58,5 @@ abstract class SimpleDataPatch implements DataPatchInterface
     /**
      * Call your patch updates within this function.
      */
-    abstract public function apply();
+    abstract public function apply(): void;
 }
