@@ -6,7 +6,7 @@ namespace MarkShust\SimpleData\Setup\Patch;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use MarkShust\SimpleData\Api\Cms\SimpleBlock;
 use MarkShust\SimpleData\Api\Cms\SimplePage;
-use MarkShust\SimpleData\Api\Config\SimpleConfig;
+use Magento\Framework\App\Config\Storage\WriterInterface as SimpleConfig;
 
 abstract class SimpleDataPatch implements DataPatchInterface
 {
