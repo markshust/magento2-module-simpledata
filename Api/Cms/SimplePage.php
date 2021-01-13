@@ -21,16 +21,16 @@ use Psr\Log\LoggerInterface;
 class SimplePage
 {
     /** @var GetPageByIdentifierInterface */
-    protected GetPageByIdentifierInterface $getPageByIdentifier;
+    protected $getPageByIdentifier;
 
     /** @var LoggerInterface */
-    protected LoggerInterface $logger;
+    protected $logger;
 
     /** @var PageInterfaceFactory */
-    protected PageInterfaceFactory $pageInterfaceFactory;
+    protected $pageInterfaceFactory;
 
     /** @var PageRepository */
-    protected PageRepository $pageRepository;
+    protected $pageRepository;
 
     /**
      * UpdateConfig constructor.

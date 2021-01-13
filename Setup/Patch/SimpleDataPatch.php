@@ -15,13 +15,13 @@ use Magento\Framework\App\Config\Storage\WriterInterface as SimpleConfig;
 abstract class SimpleDataPatch implements DataPatchInterface
 {
     /** @var SimpleBlock */
-    protected SimpleBlock $block;
+    protected $block;
 
     /** @var SimpleConfig */
-    protected SimpleConfig $config;
+    protected $config;
 
     /** @var SimplePage */
-    protected SimplePage $page;
+    protected $page;
 
     /**
      * SimpleDataPatch constructor.

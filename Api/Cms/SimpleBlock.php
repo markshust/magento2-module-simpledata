@@ -21,16 +21,16 @@ use Psr\Log\LoggerInterface;
 class SimpleBlock
 {
     /** @var BlockInterfaceFactory */
-    protected BlockInterfaceFactory $blockInterfaceFactory;
+    protected $blockInterfaceFactory;
 
     /** @var BlockRepository */
-    protected BlockRepository $blockRepository;
+    protected $blockRepository;
 
     /** @var GetBlockByIdentifierInterface */
-    protected GetBlockByIdentifierInterface $getBlockByIdentifier;
+    protected $getBlockByIdentifier;
 
     /** @var LoggerInterface */
-    protected LoggerInterface $logger;
+    protected $logger;
 
     /**
      * UpdateConfig constructor.
