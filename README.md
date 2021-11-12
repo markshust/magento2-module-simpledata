@@ -28,7 +28,7 @@ For example, here is a data patch script to update the content of a CMS page wit
 
 ## Installation
 
-```
+```sh
 composer require markshust/magento2-module-simpledata
 bin/magento module:enable MarkShust_SimpleData
 bin/magento setup:upgrade
@@ -40,41 +40,45 @@ Here are the signatures of the simplified data structures classes:
 
 `MarkShust\SimpleData\Api\Data\Cms\SimpleBlock`
 
-    /**
-     * Delete a block from a given identifier and optional store id.
-     * @param string $identifier
-     * @param int $storeId
-     */
-    public function delete(string $identifier, int $storeId = Store::DEFAULT_STORE_ID): void
+```php
+/**
+ * Delete a block from a given identifier and optional store id.
+ * @param string $identifier
+ * @param int $storeId
+ */
+public function delete(string $identifier, int $storeId = Store::DEFAULT_STORE_ID): void
 
-    /**
-     * If the CMS block identifier is found, attempt to update the record.
-     * If it is not found, attempt to create a new record.
-     * @param array $data
-     */
-    public function save(array $data): void
+/**
+ * If the CMS block identifier is found, attempt to update the record.
+ * If it is not found, attempt to create a new record.
+ * @param array $data
+ */
+public function save(array $data): void
+```
 
 `MarkShust\SimpleData\Api\Data\Cms\SimplePage`
 
-    /**
-     * Delete a page from a given identifier and optional store id.
-     * @param string $identifier
-     * @param int $storeId
-     */
-    public function delete(string $identifier, int $storeId = Store::DEFAULT_STORE_ID): void
+```php
+/**
+ * Delete a page from a given identifier and optional store id.
+ * @param string $identifier
+ * @param int $storeId
+ */
+public function delete(string $identifier, int $storeId = Store::DEFAULT_STORE_ID): void
 
-    /**
-     * If the CMS page identifier is found, attempt to update the record.
-     * If it is not found, attempt to create a new record.
-     * @param array $data
-     */
-    public function save(array $data): void
+/**
+ * If the CMS page identifier is found, attempt to update the record.
+ * If it is not found, attempt to create a new record.
+ * @param array $data
+ */
+public function save(array $data): void
+```
 
 ### Examples using SimpleDataPatch
 
 #### Create block
 
-```
+```php
 <?php
 declare(strict_types = 1);
 
@@ -101,7 +105,7 @@ CONTENT,
 
 #### Delete block
 
-```
+```php
 <?php
 declare(strict_types = 1);
 
@@ -120,7 +124,7 @@ class BlockFooBarDelete extends SimpleDataPatch
 
 #### Update block
 
-```
+```php
 <?php
 declare(strict_types = 1);
 
@@ -142,7 +146,7 @@ class BlockFooBarUpdate extends SimpleDataPatch
 
 #### Create page
 
-```
+```php
 <?php
 declare(strict_types = 1);
 
@@ -169,7 +173,7 @@ CONTENT,
 
 #### Update page
 
-```
+```php
 <?php
 declare(strict_types = 1);
 
@@ -191,7 +195,7 @@ class MyDataPatch extends SimpleDataPatch
 
 #### Delete page
 
-```
+```php
 <?php
 declare(strict_types = 1);
 
@@ -210,7 +214,7 @@ class PageFooBarDelete extends SimpleDataPatch
 
 #### Create or update config
 
-```
+```php
 <?php
 
 namespace MarkShust\Data\Setup\Patch\Data;
@@ -229,7 +233,7 @@ class ConfigFooBarCreate extends SimpleDataPatch
 
 #### Delete config
 
-```
+```php
 <?php
 
 namespace MarkShust\Data\Setup\Patch\Data;
@@ -247,7 +251,7 @@ class ConfigFooBarDelete extends SimpleDataPatch
 
 ### Example using dependency injection
 
-```
+```php
 <?php
 declare(strict_types = 1);
 
