@@ -2,8 +2,6 @@
 
     namespace MarkShust\SimpleData\Console;
 
-    use Amasty\Shopby\Api\CmsPageRepositoryInterface;
-    use Magento\Cms\Api\BlockRepositoryInterface;
     use Magento\Cms\Api\GetBlockByIdentifierInterface;
     use Magento\Cms\Api\GetPageByIdentifierInterface;
     use Magento\Framework\Console\Cli;
