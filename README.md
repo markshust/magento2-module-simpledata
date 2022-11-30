@@ -88,7 +88,7 @@ use MarkShust\SimpleData\Setup\Patch\SimpleDataPatch;
 
 class BlockFooBarCreate extends SimpleDataPatch
 {
-    public function apply(): void
+    public function apply(): self
     {
         $this->block->save([
             'identifier' => 'foo_bar',
