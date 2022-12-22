@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="MarkShust_SimpleData_Export" xsi:type="object">
+                    MarkShust\SimpleData\Console\ExportItem
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
