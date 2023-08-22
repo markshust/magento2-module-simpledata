@@ -58,5 +58,5 @@ abstract class SimpleDataPatch implements DataPatchInterface
     /**
      * Call your patch updates within this function.
      */
-    abstract public function apply(): self;
+    abstract public function apply(): DataPatchInterface;
 }
